@@ -11,7 +11,5 @@ pip3 install -U webdriver_manager
 
 # install google-chrome (used by the webdriver_manager)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-sudo apt-get install libappindicator3-1
-
+sudo apt install gnome-session gnome-terminal 
 sudo apt install ./google-chrome-stable_current_amd64.deb
