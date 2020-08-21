@@ -13,7 +13,7 @@ pip3 install -U selenium
 pip3 install -U spotipy
 pip3 install -U webdriver_manager
 
-# install google-chrome (used by the webdriver_manager)
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
-# sudo apt install chromium-browser
+# install chromium-chromedriver (used by the webdriver_manager)
+# https://ivanderevianko.com/2020/01/selenium-chromedriver-for-raspberrypi
+# path: /usr/lib/chromium-browser/chromedriver
+sudo apt-get install chromium-chromedriver
