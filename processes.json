@@ -1,0 +1,12 @@
+{
+  "duif_discord_bot": {
+    "online": true,
+    "pid": 25092,
+    "startfile": "main.py"
+  },
+  "scraper_discord_server": {
+    "online": false,
+    "pid": 0,
+    "startfile": "bot.py"
+  }
+}
