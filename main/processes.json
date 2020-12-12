@@ -1,4 +1,9 @@
 {
+  "example_application (there must be a folder in the applications dir with this name)": {
+    "online": false,
+    "pid": 0,
+    "startfile": "file that starts the app like a main.py or something"
+  },
   "duif_discord_bot": {
     "online": true,
     "pid": 0,

@@ -8,13 +8,13 @@
 
 # put every pid back to 0, that way whenever we first start this,
 # every process that is supposed to be running wil start again (bc it will still be "online": true)
-sed -i 's/\("pid":\) [0-9]\+/\1 0/g' /processes.json
+sed -i 's/\("pid":\) [0-9]\+/\1 0/g' main/processes.json
 
 prcs="../main/processes.json"
 
 # start the infinity loop
 
-cd ../applications/
+cd applications/
 
 while true; do
 
