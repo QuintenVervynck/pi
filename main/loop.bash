@@ -22,7 +22,7 @@ while true; do
 		if [[ $(jq < $prcs .$dir) != "null" ]];then # directory inside applications exists in the json
 
 # should be online
-			if [[ $(jq < $prcs .${dir}.online) == "true" ]];then
+			if [[ $(jq < $prcs .${dir}.active) == "true" ]];then
 
 				if [[ $(jq < $prcs .${dir}.pid) -eq 0 ]];then
 	# needs to be started
@@ -38,7 +38,7 @@ while true; do
 				fi
 
 # should be offline
-			elif [[ $(jq < $prcs .${dir}.online) == "false" ]];then
+			elif [[ $(jq < $prcs .${dir}.active) == "false" ]];then
 
 				if [[ ! $(jq < $prcs .${dir}.pid) -eq 0 ]];then
 	# needs to be stopped

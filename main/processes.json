@@ -1,16 +1,16 @@
 {
   "example_application (there must be a folder in the applications dir with this name)": {
-    "online": false,
+    "active": false,
     "pid": 0,
     "startfile": "file that starts the app like a main.py or something"
   },
   "duif_discord_bot": {
-    "online": true,
+    "active": true,
     "pid": 0,
     "startfile": "main.py"
   },
   "scraper_discord_server": {
-    "online": false,
+    "active": false,
     "pid": 0,
     "startfile": "bot.py"
   }
