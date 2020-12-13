@@ -1,5 +1,5 @@
 # applications
-application/*
+applications/*
 
 # log files
 logs/*
