@@ -1,0 +1,5 @@
+# applications
+application/*
+
+# log files
+logs/*
