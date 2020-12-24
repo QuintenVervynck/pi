@@ -1,20 +1,17 @@
 #!/bin/bash
 
-# making sure we start duif
+prcs="../main/processes.json"
 
-#jq < /home/pi/processes.json .duif_discord_bot.online=true > temp.json
-#mv temp.json /home/pi/processes.json
-
+# go into the applications dir, since this is where all the programs are
+cd applications/
 
 # put every pid back to 0, that way whenever we first start this,
 # every process that is supposed to be running wil start again (bc it will still be "online": true)
-sed -i 's/\("pid":\) [0-9]\+/\1 0/g' main/processes.json
+sed -i 's/\("pid":\) [0-9]\+/\1 0/g' $prcs
 
-prcs="../main/processes.json"
 
 # start the infinity loop
 
-cd applications/
 
 while true; do
 
