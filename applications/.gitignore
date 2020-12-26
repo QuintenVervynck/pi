@@ -3,3 +3,4 @@
 # Except this file
 !.gitignore
 !hello/
+!hello/main.py
